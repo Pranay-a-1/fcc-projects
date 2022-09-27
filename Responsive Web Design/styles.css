@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+
+#header {
+    position: fixed;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    top: 0;
+}
+
+#header>.name {
+    width: 70vw;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#navbar {
+    width: 29vw;
+
+}
+
+#navbar li {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#welcome-section {
+    margin-top: 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #252528;
+}
+
+#welcome-section * {
+    text-align: center;
+}
+
+#about-heading,
+#contact-heading {
+    font-size: 3rem;
+    color: white;
+}
+
+#projects-heading {
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+    margin: 40px auto;
+}
+
+#about-p,
+#contact-p {
+    font-size: 2rem;
+    font-style: italic;
+    color: orangered;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.project-img {
+    object-fit: cover;
+    width: 100%;
+    /* height: calc(100% - 6.8rem); */
+    height: 15rem;
+}
+
+
+
+#projects {
+    text-align: center;
+    margin-bottom: 6rem;
+    background: #45567d;
+}
+
+#show-button {
+    width: 7rem;
+    height: 3rem;
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background: #252528;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact * {
+    text-align: center;
+    margin: 5px auto;
+}
+
+#contact-links * {
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a li {
+    color: black;
+}
+
+
+
+@media only screen and (max-width:450px) {
+    #header {
+        position: fixed;
+        background-color: azure;
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header>.name {
+        width: 100vw;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    #navbar {
+        width: 100vw;
+    }
+
+    #navbar li {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    #contact-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #projects-heading {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: underline;
+        margin: 15px auto;
+    }
+
+    #header {
+        flex-direction: column-reverse;
+    }
+
+
+}
